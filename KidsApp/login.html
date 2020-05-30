@@ -1,0 +1,38 @@
+<html lang="en">
+    <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="kids.js">
+      </script>
+    </head>
+    <body  style="background-image: url('image2.jpeg');background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;" >
+    <label style="color: palevioletred; font-size: 40; margin-left: 100px;"> Login</label>
+        <div class="container"class="col-md-3">
+            <div class="form-group">
+                <label for="" style="font-size: medium;">Name</label>
+                <input id="name" [(ngModel)]="name" type="text" class="form-control">
+            </div>
+            <!-- <div class="form-group">
+                <label for="" style="font-size: medium;">Email</label>
+                <input [(ngModel)]="Email" type="email" class="form-control">
+            </div> -->
+            <div class="form-group" style="font-size: medium;">
+                <label for="">Email</label>
+                <input [(ngModel)]="Mobile" type="text" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <!-- <button href=kids.html  class="btn btn-success">Save</button> -->
+                <button type="button" class="btn btn-success"><a href="options.html">Login</a></button>
+                <button onclick="onCancel()" class="btn btn-danger" style="margin-left: 5px">Cancel</button>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+    </body>
+    </html>
